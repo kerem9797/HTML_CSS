@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="resimler/favicon-16x16.png" type="image/x-icon">
+        <title>Tiger GYM</title>
+        <style>
+            #sayfa{
+                border-style: solid;
+                border-width: 2px;
+                width: 800px;
+                min-height: 1000px;
+                margin: auto;
+            }
+            header{
+                border-style: solid;
+                background-color:black;
+                width: 796px;
+                height: 125px;
+                margin: auto;
+            }
+            nav{
+                border-style: solid;
+                background-color:darkgrey;
+                width: 796px;
+                height: 75px;
+                margin: auto;
+            }
+            article{
+                border-style: solid;
+                background-color:skyblue;
+                width: 796px;
+                min-height:675px;
+                margin: auto;
+            }
+            footer{
+                border-style: solid;
+                width: 796px;
+                height: 125px;
+                margin: auto;
+            }
+            #baslik h1{
+                font-size: 50px;
+                color: orange;
+                text-align:left;
+                margin: 10px;
+                padding: 20px;
+            }
+            #linkler{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size:30px;
+                margin:15px;
+                text-align: center;
+                color: black;
+            }
+            #linkler a{
+                color:black;
+            }
+            a:visited{
+                color:darkgrey;
+            }
+            a:hover{
+                color: indianred;
+                text-decoration: underline;
+            }
+            #kayitol{
+                padding: 30px;
+            }
+            #altfoto img{
+                width: 796px;
+                height: 125px;
+            }
+           
+        
+        </style>
+    </head>
+    <body>
+        <div id="sayfa">
+            <header>
+                <div id="baslik">
+                    <h1>Üye Kayıt Formu</h1>
+                </div>
+            </header>
+            <nav>
+                <div id="linkler">
+                    <a href="anasayfa.html">Anasayfa</a> |
+                    <a href="hakkimizda.html">Hakkımızda</a> |
+                    <a href="kayitol.html">Kayıt Ol</a> |
+                    <a href="iletisim.html">İletişim</a>
+                </div>
+            </nav>
+            <article>
+                <div id="kayitol">
+                    <form autocomplete="on" name="kayit" action="kayit.aspx" method="get">
+                        <table id="tablo">
+                            <tr><td>Ad:</td><td><input type="text" name="ad"id="ad" required></td></tr>
+                            <tr><td>Soyad:</td><td><input type="text" name="soyad" id="soyad"required></td></tr>
+                            <tr><td>Doğum Tarihi(GG/AA/YYYY):</td><td><input type="number" name="banka"id="banka" required></td></tr>
+                            <tr><td>Cinsiyet:</td><td><input type="radio" name="cinsiyet"value="Kadın">Kadın<input type="radio"name="cinsiyet" value="Erkek">Erkek</td></tr>
+                            <tr><td>TC No:</td><td><input type="number" name="tc"id="tc" required></td></tr>
+                            <tr><td>E-Posta:</td><td><input type="email" name="eposta"id="eposta" required></td></tr>
+                            <tr><td>Telefon:</td><td><input type="number" name="telefon"id="telefon" required></td></tr>
+                            <tr><td>Banka Kartı No:</td><td><input type="number" name="banka"id="banka" required></td></tr>
+                            <tr><td>Banka Kartı CVC No:</td><td><input type="number" name="bankacvc"id="bankacvc" required></td></tr>
+                            <tr><td>Adres:</td><td><textarea name="adres" id="adres" rows="5" cols="20"></textarea></td></tr>
+                            <tr><td>Yaşınız:</td><td><input type="number" name="yas"id="yas" required></td></tr>
+                            <tr><td>Mevcut Kilonuz:</td><td><input type="number" name="mevcutkilo" id="mevcutkilo" required></td></tr>
+                            <tr><td>Kilo Hedefiniz:</td><td><input type="number" name="hedefkilo" id="hedefkilo" required></td></tr>
+                            <tr><td>Boyunuz(ör:185):</td><td><input type="number" name="boy"id="boy"required></td></tr>
+                            <tr><td>Neden bizim spor<br>salonumuzun bir<br>üyesi olmayı<br>düşünüyorsunuz?
+                            </td><td><textarea name="fikir" id="fikir" rows="7" cols="50"></textarea></td></tr>
+                            <tr><td></td><td><input type="submit" value="Kayıt Ol"><input type="reset" value="Sil"></td></tr>
+                        </table>
+                    </form>
+                </div>
+            </article>
+            <footer>
+                <div id="altfoto">
+                    <img src="resimler/tigerlogo.png">
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
